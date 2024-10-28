@@ -3,7 +3,7 @@ def sort(arr):
         key = arr[i]  
         j = i - 1
       
-        while j >= 0 and arr[j] > key:
+        while j >= 0 and arr[j] < key:
             arr[j + 1] = arr[j]
             j -= 1
 
@@ -14,3 +14,8 @@ def sort(arr):
 
 
 
+
+arr = [2, 30, 1, 25, 5, 9]
+sorted_arr = sort(arr)
+
+print(sorted_arr)
